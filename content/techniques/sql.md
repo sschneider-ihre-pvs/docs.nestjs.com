@@ -748,7 +748,7 @@ In order to prevent the creation of `TypeOrmConfigService` inside `TypeOrmModule
 ```typescript
 TypeOrmModule.forRootAsync({
   imports: [ConfigModule],
-  useExisting: ConfigService,
+  useExisting: TypeOrmConfigService,
 });
 ```
 
